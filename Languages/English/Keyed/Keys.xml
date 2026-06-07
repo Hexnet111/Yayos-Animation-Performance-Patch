@@ -3,7 +3,7 @@
     <YayoAnim_OnlyPlayerPawns>Only player pawn animations</YayoAnim_OnlyPlayerPawns>
     <YayoAnim_OnlyPlayerPawnsTooltip>Prevents any pawn (be it human, animal, or mechanoid) from having any animations unless they're from player's faction.</YayoAnim_OnlyPlayerPawnsTooltip>
 	<YayoAnim_BatchedProcessing>Batched animation processing</YayoAnim_BatchedProcessing>
-	<YayoAnim_BatchedProcessingTooltip>Processes only a 1/x of the pawns each animation update. This results in a more balanced processing time, however may result in animations not running on some edge cases.\n(x = Animation batch groups)</YayoAnim_BatchedProcessingTooltip>
+	<YayoAnim_BatchedProcessingTooltip>Processes only a 1/x of the pawns each tick. This results in a more balanced processing time, however may result in animations not running on some edge cases.\n(x = Animation batch groups)</YayoAnim_BatchedProcessingTooltip>
 	<YayoAnim_BatchGroups>Animation batch groups</YayoAnim_BatchGroups>
 	<YayoAnim_BatchGroupsToolTip>Determines how many groups to split pawns into when using Batched animation processing.\nHigher numbers may result in better performance, but may also cause unintended effects.</YayoAnim_BatchGroupsToolTip>
     <YayoAnim_UpdateFrequency>Update frequency (in ticks)</YayoAnim_UpdateFrequency>
