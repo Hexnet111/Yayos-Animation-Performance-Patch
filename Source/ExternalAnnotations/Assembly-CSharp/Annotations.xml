@@ -16,4 +16,10 @@
             <argument>null => true</argument>
         </attribute>
     </member>
+
+    <member name="M:Verse.GenList.NullOrEmpty``1(System.Collections.Generic.IList{``0})">
+        <attribute ctor="M:JetBrains.Annotations.ContractAnnotationAttribute.#ctor(System.String)">
+            <argument>null => true</argument>
+        </attribute>
+    </member>
 </assembly>
