@@ -18,7 +18,7 @@ public static class ParallelGetPreRenderResultsPatch
         if (!Core.settings.batchedProcessing)
             return true;
 
-        return pawn.IsHashIntervalTick(Core.settings.batchGroups, 1); 
+        return pawn.IsHashIntervalTick(Core.settings.batchGroups, 2); 
     }
 
     public static void Prefix(PawnRenderer __instance, Pawn ___pawn, ref Vector3 drawLoc, ref Rot4? rotOverride)
