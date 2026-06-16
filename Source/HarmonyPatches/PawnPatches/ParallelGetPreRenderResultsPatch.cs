@@ -18,9 +18,7 @@ public static class ParallelGetPreRenderResultsPatch
         if (!Core.settings.batchedProcessing)
             return true;
 
-        // Doesn't fully guarantee 1/x being proccessed at a time, however this is multi threading friendly.
-        // Using ConcurrentDictionary to achieve a perfect distribution works, but from testing ends up being less good performance wise.
-        return (pawn.thingIDNumber + Find.TickManager.TicksGame) % Core.settings.batchGroups == 0; 
+        return pawn.IsHashIntervalTick(Core.settings.batchGroups, 1); 
     }
 
     public static void Prefix(PawnRenderer __instance, Pawn ___pawn, ref Vector3 drawLoc, ref Rot4? rotOverride)
